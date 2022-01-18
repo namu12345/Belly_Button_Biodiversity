@@ -9,24 +9,39 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-color: #bce9e4;">
+  <div class="topnav" style = "text-align: center;
+  padding: 10px; position:fixed; z-index: 2; width: 100%; transition: top 0.3s;; background-color: aquamarine; ;">
+  
+  
+    <a href="#BellyButton"><b>Home</b></a>
+    <a href="#bar"><b>BarChart</b></a>    
+    <a href="#gauge"><b>GaugeChart</b></a>   
+    <a href="#bubble"><b>BubbleChart</b></a>
+    
+  </div>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+    <div id= "BellyButton" class="row">
+      <div class="col-md-12 jumbotron text-center" style = "background-image:url(https://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/12/virus1.jpg);">
+        <h1 style="font-weight: bold; color: rgb(64, 224, 136); text-shadow:2px 2px #6200ff">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:rgb(231, 233, 222); text-shadow:2px 2px #6200ff;"> Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2" style= "font-weight: bold;">
+      <div class="col-md-2">
 
-        <div class="well">
+        <div class="well" style="background-color: #d8f1f1 ;
+        font-family: Verdana;
+        font-weight: 90;
+        font-size: smaller;">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary" >
+        <div class="panel panel-primary" style="background-color: #d8f1f1;
+        font-family: Verdana;
+        font-weight: 90;">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
@@ -35,17 +50,32 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <div class = "charts" style="text-align: center; background-color: rgb(234, 243, 240);">
+        <h4><b>Horizontal Bar Chart</b></h4>
+        <p>Represents the top 10 bacteria cultures found based on volume identified by ID, name and sample volume.</p>
       </div>
-      <div class="col-md-5">
+      </div>
+
+      <div class="col-md-5" >
         <div id="gauge"></div>
+        <div class = "charts" style="text-align: center; background-color: rgb(234, 243, 240);">
+        <h4><b>Gauge Chart</b></h4>
+        <p>Reported frequency in which the sample area was washed. <br>Subjects that had a lower frequency of washes provided a higher concentration of cultures available for sampling.</p>
+      </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <div class = "charts" style="text-align: center; background-color: rgb(234, 243, 240);">
+        <h4><b>Bubble Chart</b></h4>
+        <p>Representation of the cultures that were collected. The higher the volume of samples, the larger the bubbles.</p>
+      </div>
+        
       </div>
     </div>
   </div>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
