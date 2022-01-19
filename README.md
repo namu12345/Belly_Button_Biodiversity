@@ -6,7 +6,7 @@
 ## Overview
 Biomanufacturing food company Improbable Beef is looking for people who carry a large number of a certain bacterial species. They have enlisted the assistance of a bio-research firm to create a web-based dashboard where research volunteers could quickly identify whether they are eligible to sell their bacteria to Improbable Beef. Specifically, the volunteers should be able to identify the top 10 bacterial species they hosted. The goal of this dashboard is to sort the most common species of bacteria and then display the results on the webpage.
 
-Here is the link of the Webpage which I developed :  https://namu12345.github.io/Belly_Button_Biodiversity/
+Here is the link of the Webpage :  https://namu12345.github.io/Belly_Button_Biodiversity/
 
 ## Resources
 - JavaScript [charts.js](https://github.com/namu12345/Belly_Button_Biodiversity/blob/main/static/js/charts.js)
